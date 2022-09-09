@@ -7,7 +7,7 @@
   <main>
     <ul *ngIf="tasks.length; else noTasks">
       <li class="task" *ngFor="let task of tasks; let i= index">
-        <span>
+        <span style="font-size: 18px">
           <strong>{{ i + 1}}</strong>
           {{ task.title }}
         </span>
