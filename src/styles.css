@@ -26,6 +26,9 @@ a {
   color: var(--primary-color);
   text-decoration: none;
  }
+a:hover {
+  color: #666;
+}
 
 ul {
   list-style: none;
@@ -63,6 +66,12 @@ table th {
   margin-right: .5rem;
   transition: opacity .2s;
   outline: none;
+}
+.btn:disabled,
+button[disabled] {
+  background: var(--dark-color);
+  color: #fff;
+  cursor: not-allowed;
 }
 
 .btn-block {
