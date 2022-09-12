@@ -17,6 +17,8 @@ import { OrganizerComponent } from './organizer/organizer.component';
 import {MomentPipe} from "./shared/moment.pipe";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {CdkTableModule} from "@angular/cdk/table";
 
 
 @NgModule({
@@ -31,17 +33,19 @@ import {HttpClientModule} from "@angular/common/http";
     OrganizerComponent,
     MomentPipe
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        MatExpansionModule,
+        CdkTableModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

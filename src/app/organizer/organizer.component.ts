@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {DateService} from '../shared/date.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Task, TasksService} from '../shared/tasks.service';
-import {switchMap} from 'rxjs/operators';
+import {count, switchMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-organizer',
