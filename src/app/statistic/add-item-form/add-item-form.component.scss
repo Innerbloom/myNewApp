@@ -1,1 +1,23 @@
 @import 'src/main-styles.scss';
+
+.field-body {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 20px;
+  background: rgba(116,29,135,0.87);
+  text-align: center;
+  margin-left: 5px;
+  height: 35px;
+  width: 60px;
+}
+
+.control {
+  margin: 8px;
+}
+
+
