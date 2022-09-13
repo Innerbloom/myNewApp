@@ -22,6 +22,9 @@ import {CdkTableModule} from "@angular/cdk/table";
 import { AddItemFormComponent } from './statistic/add-item-form/add-item-form.component';
 import { BudgetItemListComponent } from './statistic/budget-item-list/budget-item-list.component';
 import { BudgetItemCardComponent } from './statistic/budget-item-list/budget-item-card/budget-item-card.component';
+import { EditItemModalComponent } from './statistic/edit-item-modal/edit-item-modal.component';
+import { MatDialogModule} from "@angular/material/dialog";
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { BudgetItemCardComponent } from './statistic/budget-item-list/budget-ite
     MomentPipe,
     AddItemFormComponent,
     BudgetItemListComponent,
-    BudgetItemCardComponent
+    BudgetItemCardComponent,
+    EditItemModalComponent
   ],
     imports: [
         BrowserModule,
@@ -49,7 +53,8 @@ import { BudgetItemCardComponent } from './statistic/budget-item-list/budget-ite
         ReactiveFormsModule,
         HttpClientModule,
         MatExpansionModule,
-        CdkTableModule
+        CdkTableModule,
+        MatDialogModule
     ],
   providers: [],
   bootstrap: [AppComponent]
