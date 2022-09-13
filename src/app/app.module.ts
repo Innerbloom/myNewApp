@@ -19,7 +19,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {CdkTableModule} from "@angular/cdk/table";
-
+import { AddItemFormComponent } from './statistic/add-item-form/add-item-form.component';
+import { BudgetItemListComponent } from './statistic/budget-item-list/budget-item-list.component';
+import { BudgetItemCardComponent } from './statistic/budget-item-list/budget-item-card/budget-item-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import {CdkTableModule} from "@angular/cdk/table";
     CalendComponent,
     SelectorComponent,
     OrganizerComponent,
-    MomentPipe
+    MomentPipe,
+    AddItemFormComponent,
+    BudgetItemListComponent,
+    BudgetItemCardComponent
   ],
     imports: [
         BrowserModule,
