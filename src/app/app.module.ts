@@ -57,6 +57,7 @@ import { MatDialogModule} from "@angular/material/dialog";
         MatDialogModule
     ],
   providers: [],
+  entryComponents: [EditItemModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
